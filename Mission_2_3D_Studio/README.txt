@@ -1,16 +1,26 @@
 VENTURE 3D STUDIO — MISSION 2
 
-OPEN
-Open index.html in a modern browser with an internet connection. The interface loads Three.js, OrbitControls, GLTFExporter and JSZip from public CDNs. No installation or API key is needed. CDN access is required for the 3D workspace and export.
+Open the published studio at:
+https://opack24.github.io/Venture-3D-studio/
 
-EXPLORE AND EDIT
-Drag in the viewport to orbit and scroll to zoom. Use the camera buttons for front, side, top and isometric views. Select a part from the Scene Objects list or click it in the viewport. Use Design Controls to change its color, scale, vertical position and material. Save project keeps the current editable state in this browser. Open project imports a JSON project snapshot. The reference image shown in the left panel is included beside the app as concept-reference.png.
+The app turns a concept image into a procedural, editable 3D interpretation. It does not claim to reconstruct exact geometry from an image. The supplied laundry station already has a starter model when the app opens.
 
-CONFIRM MODEL
-Choose Confirm model to create Venture_3D_Confirmed_Handoff.zip. The package contains model.glb, model-manifest.json, project.json, preview.png and README.txt. The browser downloads the ZIP. Keep the ZIP and bring it into Mission 3. The included model is genuine editable mesh geometry, interpreted procedurally from the concept image; it is not a scan or accurate automatic reconstruction.
+EXPLORE
+Drag with the left mouse button to orbit. Scroll to zoom. Right-drag to pan. Use Isometric, Front, Side and Top for camera presets. Toggle the grid or switch between perspective and orthographic projection.
 
-LIMITATIONS
-This is a local prototype, not a published GitHub Pages site. The specified Downloads/untitled folder did not exist in this environment, and the repository could not be checked out because Git requires missing Xcode command-line tools on this Mac. Texture image application, arbitrary imported project geometry, and ZIP re-import are not implemented. The imported reference image replaces the displayed reference only for the current browser session. Project storage is local to the browser and device; download backups.
+EDIT
+Select a scene part in the left list or click it in the 3D view. Change its color, size, material feel and transparency in the right panel. Use the Move, Rotate and Scale gizmos or enter position and rotation values. Rename, duplicate, remove or reset a part. Undo and Redo cover common design edits.
 
-DEPLOYMENT
-After repository access is available, copy this folder into the Mission 2 repository, host its static files with GitHub Pages, and verify the public URL and ZIP export in a browser. Update the repository workflow/base path as appropriate before calling it published.
+TEMPLATES AND REFERENCES
+The template menu adds editable bottle, box, bag, mascot, merchandise, room and abstract sculpture geometry. Upload front, side, back or detail reference images; choose a view in the gallery to display it beside the model. Use Image texture to apply an image to the selected part, then adjust texture repeat.
+
+SAVE AND EXPORT
+Save project stores an editable snapshot in this browser using IndexedDB where available. Download JSON backup creates a portable project file; Open project accepts a project JSON or a confirmed handoff ZIP. Export GLB creates a separate binary 3D model. Confirm model validates the exported GLB by loading it again, then downloads Venture_3D_Confirmed_Handoff.zip with model.glb, model-manifest.json, project.json, preview.png, README.txt and included reference/texture assets.
+
+Bring the confirmed ZIP into Mission 3. Verify model-manifest.json and the SHA-256 checksum when you receive the handoff. The GLB is real geometry with materials; the preview image is only a preview.
+
+IMPORTANT
+Browser saves stay on this device and browser profile. Download backups to move projects between devices or protect them from browser-data clearing. The app loads Three.js and JSZip from public CDNs, so an internet connection is required. User-supplied reference images and textures are bundled into JSON backups and confirmed handoffs.
+
+REPOSITORY
+Source: https://github.com/opack24/Venture-3D-studio/tree/main/Mission_2_3D_Studio
